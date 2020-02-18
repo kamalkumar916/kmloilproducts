@@ -7,6 +7,8 @@ import { HelloComponent } from './hello.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import {InputTextModule} from 'primeng/inputtext';
+import { RegisterComponent } from './register/register.component';
+import { OilProductDetailsComponent } from './oil-product-details/oil-product-details.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -18,7 +20,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true } 
     ) ],
-  declarations: [ AppComponent, HelloComponent, LoginComponent ],
+  declarations: [ AppComponent, HelloComponent, LoginComponent, RegisterComponent, OilProductDetailsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
