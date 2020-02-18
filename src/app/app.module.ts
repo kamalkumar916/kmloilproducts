@@ -13,6 +13,7 @@ import { OilProductDetailsComponent } from './oil-product-details/oil-product-de
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
+    {path:'oil_details', component:OilProductDetailsComponent}
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule,InputTextModule,
