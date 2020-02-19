@@ -13,6 +13,7 @@ import { OilProductDetailsComponent } from './oil-product-details/oil-product-de
 import {DialogModule} from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CardModule} from 'primeng/card';
+import { OilDetailsInfoComponent } from './oil-details-info/oil-details-info/oil-details-info.component';
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
@@ -27,7 +28,7 @@ CardModule,
       appRoutes,
       { enableTracing: true } 
     ) ],
-  declarations: [ AppComponent, HelloComponent, LoginComponent, OilProductDetailsComponent ],
+  declarations: [ AppComponent, HelloComponent, LoginComponent, OilProductDetailsComponent, OilDetailsInfoComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
