@@ -16,17 +16,19 @@
     <div class="ui-g-12 ui-md-6 ui-lg-3">ui-g-12 ui-md-6 ui-lg-3</div>
     <div class="ui-g-12 ui-md-6 ui-lg-3">ui-g-12 ui-md-6 ui-lg-3</div>
 </div>
-<p-dialog header="Godfather Casting" [(visible)]="showSignup" [style]="{width: '50vw'}" [baseZIndex]="10000">
-    Puzo was first to show interest in having Marlon Brando portray Don Vito Corleone by sending a letter to Brando in which he stated Brando was the "only actor who can play the Godfather." Despite Puzo's wishes, the executives at Paramount were against having Brando, partly due to the poor performance of his recent films and also his short temper. Coppola favored Brando or Laurence Olivier for the role, but Olivier's agent refused the role claiming Olivier was sick; however, Olivier went on to star in Sleuth later that year. The studio mainly pushed for Ernest Borgnine to receive the part. Other considerations were George C. Scott, Richard Conte, Anthony Quinn, and Orson Welles.
-    <br><br>
-    Coppola gave several roles in the film to family members. He gave his sister, Talia Shire, the role of Connie Corleone. His daughter Sofia played Michael Francis Rizzi, Connie's and Carlo's newborn son. Carmine Coppola, his father, appeared in the film as an extra playing a piano during a scene. Coppola's wife, mother, and two sons all appeared as extras in the picture. Several smaller roles, like Luca Brasi, were cast after the filming had started.
-    <br><br>
+<p-dialog header="Register" [(visible)]="showSignup" [style]="{width: '50vw'}" [baseZIndex]="10000">
+   <div>User Name</div>
+<input type="text" pInputText [(ngModel)]="property"/>
+<div></div>
+<div>Password</div>
+
+<input type="text" pInputText [(ngModel)]="property"/>
     <p-footer>
         <button type="button" pButton icon="pi pi-check" (click)="showSignup=false" label="Yes"></button>
         <button type="button" pButton icon="pi pi-times" (click)="showSignup=false" label="No" class="ui-button-secondary"></button>
     </p-footer>
 </p-dialog>
-<p-dialog header="Godfather Casting" [(visible)]="showLogin" [style]="{width: '50vw'}" [baseZIndex]="10000">
+<p-dialog header="Login" [(visible)]="showLogin" [style]="{width: '50vw'}" [baseZIndex]="10000">
     Puzo was first to show interest in having Marlon Brando portray Don Vito Corleone by sending a letter to Brando in which he stated Brando was the "only actor who can play the Godfather." Despite Puzo's wishes, the executives at Paramount were against having Brando, partly due to the poor performance of his recent films and also his short temper. Coppola favored Brando or Laurence Olivier for the role, but Olivier's agent refused the role claiming Olivier was sick; however, Olivier went on to star in Sleuth later that year. The studio mainly pushed for Ernest Borgnine to receive the part. Other considerations were George C. Scott, Richard Conte, Anthony Quinn, and Orson Welles.
     <br><br>
     Coppola gave several roles in the film to family members. He gave his sister, Talia Shire, the role of Connie Corleone. His daughter Sofia played Michael Francis Rizzi, Connie's and Carlo's newborn son. Carmine Coppola, his father, appeared in the film as an extra playing a piano during a scene. Coppola's wife, mother, and two sons all appeared as extras in the picture. Several smaller roles, like Luca Brasi, were cast after the filming had started.
