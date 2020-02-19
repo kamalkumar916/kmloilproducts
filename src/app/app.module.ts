@@ -10,7 +10,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
 import { OilProductDetailsComponent } from './oil-product-details/oil-product-details.component';
-
+import {DialogModule} from 'primeng/dialog';
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
@@ -18,6 +18,7 @@ const appRoutes: Routes = [
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule,InputTextModule,ToolbarModule,ButtonModule,
+  DialogModule,
    RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } 
