@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-oil-product-details',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class OilProductDetailsComponent implements OnInit {
 showSignup:boolean=false;
 showLogin:boolean=false;
-  constructor() { }
+  constructor( private router:Router) { }
 
   ngOnInit() {
   }
@@ -17,5 +19,8 @@ this.showSignup=true;
   }
 login(){
 this.showLogin=true;
+}
+navigateProDetails(){
+  this.router.navigate(['/productinfo'], { queryParams: { productId: 1 } });
 }
 }

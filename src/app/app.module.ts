@@ -17,7 +17,8 @@ import { OilProductInfoComponent } from './oil-product-info/oil-product-info.com
 const appRoutes: Routes = [
   { path: '', component: OilProductDetailsComponent },
     { path: 'login', component: LoginComponent },
-    {path:'oil_details', component:OilProductDetailsComponent}
+    {path:'oil_details', component:OilProductDetailsComponent},
+    {path:'productinfo/:productId',component:OilProductInfoComponent}
 ];
 @NgModule({
   imports:      [ BrowserModule, FormsModule,InputTextModule,ToolbarModule,ButtonModule,
