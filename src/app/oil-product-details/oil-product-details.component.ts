@@ -21,6 +21,6 @@ login(){
 this.showLogin=true;
 }
 navigateProDetails(){
-  this.router.navigate(['/productinfo'], { queryParams: { productId: 1 } });
+  this.router.navigate(['productinfo'], { queryParams: { productId: 1 } });
 }
 }
