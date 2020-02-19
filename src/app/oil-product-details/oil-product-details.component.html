@@ -24,8 +24,8 @@
 
 <input type="text" pInputText [(ngModel)]="property"/>
     <p-footer>
-        <button type="button" pButton icon="pi pi-check" (click)="showSignup=false" label="Yes"></button>
-        <button type="button" pButton icon="pi pi-times" (click)="showSignup=false" label="No" class="ui-button-secondary"></button>
+        <button pButton type="button" label="Secondary" (click)="showSignup=false" class="ui-button-rounded ui-button-secondary"></button>
+<button pButton type="button" label="Success" (click)="showSignup=false" class="ui-button-rounded ui-button-success"></button>
     </p-footer>
 </p-dialog>
 <p-dialog header="Login" [(visible)]="showLogin" [style]="{width: '50vw'}" [baseZIndex]="10000">
@@ -34,8 +34,8 @@
     Coppola gave several roles in the film to family members. He gave his sister, Talia Shire, the role of Connie Corleone. His daughter Sofia played Michael Francis Rizzi, Connie's and Carlo's newborn son. Carmine Coppola, his father, appeared in the film as an extra playing a piano during a scene. Coppola's wife, mother, and two sons all appeared as extras in the picture. Several smaller roles, like Luca Brasi, were cast after the filming had started.
     <br><br>
     <p-footer>
-        <button type="button" pButton icon="pi pi-check" (click)="showLogin=false" label="Yes"></button>
-        <button type="button" pButton icon="pi pi-times" (click)="showLogin=false" label="No" class="ui-button-secondary"></button>
+      <button pButton type="button" label="Secondary" (click)="showLogin=false" class="ui-button-rounded ui-button-secondary"></button>
+<button pButton type="button" label="Success" (click)="showLogin=false" class="ui-button-rounded ui-button-success"></button>
     </p-footer>
 </p-dialog>
 
