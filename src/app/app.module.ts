@@ -7,7 +7,8 @@ import { HelloComponent } from './hello.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import {InputTextModule} from 'primeng/inputtext';
-import { RegisterComponent } from './register/register.component';
+import {ToolbarModule} from 'primeng/toolbar';
+
 import { OilProductDetailsComponent } from './oil-product-details/oil-product-details.component';
 
 const appRoutes: Routes = [
@@ -16,12 +17,12 @@ const appRoutes: Routes = [
     {path:'oil_details', component:OilProductDetailsComponent}
 ];
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,InputTextModule,
+  imports:      [ BrowserModule, FormsModule,InputTextModule,ToolbarModule
    RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } 
     ) ],
-  declarations: [ AppComponent, HelloComponent, LoginComponent, RegisterComponent, OilProductDetailsComponent ],
+  declarations: [ AppComponent, HelloComponent, LoginComponent, OilProductDetailsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
