@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+showSignup:boolean=false;
+showLogin:boolean=false;
+  constructor( ) { }
+
+  ngOnInit() {
+  }
+  signup(){
+this.showSignup=true;
+  }
+login(){
+this.showLogin=true;
+}
 }
