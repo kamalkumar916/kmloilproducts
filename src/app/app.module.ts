@@ -14,6 +14,8 @@ import {DialogModule} from 'primeng/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CardModule} from 'primeng/card';
 import { OilProductInfoComponent } from './oil-product-info/oil-product-info.component';
+import {SpinnerModule} from 'primeng/spinner';
+
 const appRoutes: Routes = [
   { path: '', component: OilProductDetailsComponent },
     { path: 'login', component: LoginComponent },
@@ -24,7 +26,7 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, FormsModule,InputTextModule,ToolbarModule,ButtonModule,
   DialogModule,
   BrowserAnimationsModule,
-CardModule,
+CardModule,SpinnerModule,
    RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } 
